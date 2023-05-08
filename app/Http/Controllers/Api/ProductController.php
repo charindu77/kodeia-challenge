@@ -14,7 +14,7 @@ class ProductController extends Controller
     use ApiResponseTrait;
     public function index()
     {
-        $products = Product::all();
+        $products = Product::latest()->get();
         
         if ($products->isEmpty()) {
             return $this->successResponse(['data' => 'No products found'], 204);
