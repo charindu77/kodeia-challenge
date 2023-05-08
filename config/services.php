@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'woocommerce'=>[
+        'base_url'=> 'https://ness-train-rumo.instawp.xyz',
+        'consumer_key'=>'ck_c6cac780031a4f643aa746b2e2a7f37abbfdaf73',
+        'consumer_secret'=>'cs_2e328beb629f38e1c6f561e1f823375963321276',
+    ],
+
 ];
